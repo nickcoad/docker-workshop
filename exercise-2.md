@@ -124,6 +124,33 @@ services:
 
 Hold on a second! What does 'database' mean? How does phpMyAdmin make sense of that, it doesn't look at all like a server location. The answer is simple - within the Docker Compose virtual network, each container is given a hostname directly corresponding to the service name specified in the `docker-compose.yml` configuration. In our case, we have named the MySQL container 'database'. This means from within the Docker Compose virtual network, that service can be communicated with using 'database' as the hostname. It's possible to also specify a port, but in our case we're running on the default port so phpMyAdmin doesn't need to be told which port to use.
 
+**Note:** Since v8.0 of MySQL, a different default identification method is used. This identification method does not support a username and password, which phpMyAdmin needs to use in order to connect. To re-enable the older identification method, we need to specify this in our container configuration. There's no need to concern yourself too much with the specifics of this, just update your `docker-compose.yml` to match the following:
+
+```yaml
+version: "3.7"
+
+services:
+  database:
+    image: mysql:latest
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    ports:
+      - 1001:80
+    environment:
+      PMA_HOST: database
+```
+
+This change actually impacts the way MySQL is initialised in the container, so we need to make sure that initialisation process occurs again right from the start. Normally when you stop Docker Compose and start it again, the services pick up from where they were left off, but we want to start again from scratch. To do this, we issue the following command:
+
+```
+docker-compose down
+```
+
+This removes the temporary volumes that the containers use for their file systems, essentially resetting the containers back to their initial state, as though you are running them for the first time. This is only required if you want to rerun some initialisation procedures that are usually only run once.
+
 Finally, run the stack one more time using:
 
 ```
