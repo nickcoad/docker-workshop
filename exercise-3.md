@@ -160,6 +160,6 @@ If everything has gone according to plan, you should receive the following outpu
 Hello from my container!
 ```
 
-Congratulations! Those images we've used in the previous exercises? You've now built your _very own_ image with your very own application on it. If you wanted to you could publish this image to the Docker registry and anyone could re-use it, or you could set up your own Docker registry and your team will all be able to access the images.
+Congratulations! Those images we've used in the previous exercises? You've now built your _very own_ image with your very own application on it. If you wanted to you could publish this image to the Docker registry and anyone could re-use it, or you could set up your own image registry and your team will all be able to access the images. Services to host your own Docker image registries are provided by AWS and Azure DevOps, among others.
 
-Additionally, we've experienced one of the key value-adds of Docker - we were able to compile and publish a .NET Core application without downloading or installing any .NET Core tooling to our machines, it was all done entirely within Docker containers!
+Additionally, we've experienced one of the key value-adds of Docker - we were able to compile and publish a .NET Core application without downloading or installing any .NET Core tooling to our machines, it was all done entirely within Docker containers! If this were in a Git repository, a new developer could clone the repository, modify the application and build it without ever installing a single .NET Core tool.
