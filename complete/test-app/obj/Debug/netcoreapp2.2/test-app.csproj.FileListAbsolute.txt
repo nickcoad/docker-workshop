@@ -1,0 +1,17 @@
+/home/nick/projects/personal/docker-workshop/test-app/bin/Debug/netcoreapp2.2/test-app.deps.json
+/home/nick/projects/personal/docker-workshop/test-app/bin/Debug/netcoreapp2.2/test-app.runtimeconfig.json
+/home/nick/projects/personal/docker-workshop/test-app/bin/Debug/netcoreapp2.2/test-app.runtimeconfig.dev.json
+/home/nick/projects/personal/docker-workshop/test-app/bin/Debug/netcoreapp2.2/test-app.dll
+/home/nick/projects/personal/docker-workshop/test-app/bin/Debug/netcoreapp2.2/test-app.pdb
+/home/nick/projects/personal/docker-workshop/test-app/obj/Debug/netcoreapp2.2/test-app.csprojAssemblyReference.cache
+/home/nick/projects/personal/docker-workshop/test-app/obj/Debug/netcoreapp2.2/test-app.csproj.CoreCompileInputs.cache
+/home/nick/projects/personal/docker-workshop/test-app/obj/Debug/netcoreapp2.2/test-app.AssemblyInfoInputs.cache
+/home/nick/projects/personal/docker-workshop/test-app/obj/Debug/netcoreapp2.2/test-app.AssemblyInfo.cs
+/home/nick/projects/personal/docker-workshop/test-app/obj/Debug/netcoreapp2.2/test-app.dll
+/home/nick/projects/personal/docker-workshop/test-app/obj/Debug/netcoreapp2.2/test-app.pdb
+/home/nick/projects/personal/docker-workshop/Complete/test-app/obj/Debug/netcoreapp2.2/test-app.csprojAssemblyReference.cache
+/home/nick/projects/personal/docker-workshop/Complete/test-app/obj/Debug/netcoreapp2.2/test-app.csproj.CoreCompileInputs.cache
+/home/nick/projects/personal/docker-workshop/Complete/test-app/obj/Debug/netcoreapp2.2/test-app.AssemblyInfoInputs.cache
+/home/nick/projects/personal/docker-workshop/Complete/test-app/obj/Debug/netcoreapp2.2/test-app.AssemblyInfo.cs
+/home/nick/projects/personal/docker-workshop/Complete/test-app/obj/Debug/netcoreapp2.2/test-app.dll
+/home/nick/projects/personal/docker-workshop/Complete/test-app/obj/Debug/netcoreapp2.2/test-app.pdb

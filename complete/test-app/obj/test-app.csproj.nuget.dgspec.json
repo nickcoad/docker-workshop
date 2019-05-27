@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/nick/projects/personal/docker-workshop/Complete/test-app/test-app.csproj": {}
+  },
+  "projects": {
+    "/home/nick/projects/personal/docker-workshop/Complete/test-app/test-app.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/nick/projects/personal/docker-workshop/Complete/test-app/test-app.csproj",
+        "projectName": "test-app",
+        "projectPath": "/home/nick/projects/personal/docker-workshop/Complete/test-app/test-app.csproj",
+        "packagesPath": "/home/nick/.nuget/packages/",
+        "outputPath": "/home/nick/projects/personal/docker-workshop/Complete/test-app/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/nick/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "MySQL.Data": {
+              "target": "Package",
+              "version": "[8.0.16, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
