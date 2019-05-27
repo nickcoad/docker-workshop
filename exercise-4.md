@@ -169,9 +169,9 @@ namespace test_app
 </Project>
 ```
 
-The contents of this app aren't super important for the purposes of this exercise, but there are a couple of things we should take note of. In the first few lines the application attempts to gather some configuration from environment variables. You'll notice that some are set with sensible defaults if not present in the environment variables, but others will cause the application to exit if they are not provided.
+The contents of this app aren't super important for the purposes of this exercise, but there are a couple of things we should take note of. In the first few lines the application attempts to gather some configuration from environment variables. You'll notice that some are set with sensible defaults if not present in the environment variables, but others will cause the application to exit if they are not provided so we will need to ensure we configure those environment variables in our `docker-compose.yml`.
 
-Secondly, we have a loop that attempts to connect to the database for 30 seconds before giving up. This is because when we first start up our database service it will perform all of it's initialisation steps. This can take some time, so we want to give it at least 30 seconds to come up before we finally give up on it.
+Secondly, we have a loop that attempts to connect to the database for 30 seconds before giving up. This is because when we first start up our database service it will perform all its initialisation steps. This can take some time, so we want to give it at least 30 seconds to come up before we finally give up on it.
 
 ## Adding your image to the stack
 
